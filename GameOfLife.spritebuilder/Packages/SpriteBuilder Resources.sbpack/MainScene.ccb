@@ -231,7 +231,7 @@
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>SpriteBuilder</string>
+							<string>Game of Life</string>
 							<false/>
 						</array>
 					</dict>
@@ -367,6 +367,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>
