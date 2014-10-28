@@ -186,7 +186,7 @@ static int column;
                 }
             }
         }
-    }
+   // }
    
      _totalAlive = numAlive;
 }
