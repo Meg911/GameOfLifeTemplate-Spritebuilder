@@ -212,6 +212,10 @@
 												</array>
 											</dict>
 										</array>
+										<key>selected</key>
+										<true/>
+										<key>seqExpanded</key>
+										<true/>
 									</dict>
 									<dict>
 										<key>UUID</key>
@@ -426,8 +430,6 @@
 														</array>
 													</dict>
 												</array>
-												<key>selected</key>
-												<true/>
 											</dict>
 											<dict>
 												<key>UUID</key>
@@ -1281,8 +1283,8 @@ _generationLabel</string>
 												<string>Size</string>
 												<key>value</key>
 												<array>
-													<real>70</real>
-													<real>35</real>
+													<real>0.0</real>
+													<real>0.0</real>
 													<integer>0</integer>
 													<integer>0</integer>
 												</array>
@@ -1512,6 +1514,8 @@ _generationLabel</string>
 												</array>
 											</dict>
 										</array>
+										<key>seqExpanded</key>
+										<true/>
 									</dict>
 									<dict>
 										<key>UUID</key>
@@ -1607,8 +1611,8 @@ _generationLabel</string>
 												<string>Size</string>
 												<key>value</key>
 												<array>
-													<real>70</real>
-													<real>35</real>
+													<real>0.0</real>
+													<real>0.0</real>
 													<integer>0</integer>
 													<integer>0</integer>
 												</array>
@@ -1838,6 +1842,8 @@ _generationLabel</string>
 												</array>
 											</dict>
 										</array>
+										<key>seqExpanded</key>
+										<true/>
 									</dict>
 								</array>
 								<key>customClass</key>
@@ -2210,9 +2216,9 @@ _generationLabel</string>
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
-			<real>0.0</real>
+			<real>2.9312500953674316</real>
 			<key>position</key>
-			<real>0.0</real>
+			<real>5.9000000953674316</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

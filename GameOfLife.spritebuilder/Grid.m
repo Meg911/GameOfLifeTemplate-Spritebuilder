@@ -18,6 +18,7 @@ static const int GRID_COLUMNS = 10;
 static int row ;
 static int column;
 
+
 @implementation Grid {
   
     NSMutableArray *_gridArray;
