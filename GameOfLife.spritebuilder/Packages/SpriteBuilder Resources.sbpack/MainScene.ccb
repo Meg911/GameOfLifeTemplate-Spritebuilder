@@ -1836,8 +1836,6 @@ _generationLabel</string>
 												</array>
 											</dict>
 										</array>
-										<key>selected</key>
-										<true/>
 									</dict>
 								</array>
 								<key>customClass</key>
@@ -2112,8 +2110,8 @@ _generationLabel</string>
 				<string>Size</string>
 				<key>value</key>
 				<array>
-					<real>0.5</real>
-					<real>0.5</real>
+					<real>1</real>
+					<real>1</real>
 					<integer>2</integer>
 					<integer>2</integer>
 				</array>
@@ -2210,13 +2208,13 @@ _generationLabel</string>
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
-			<real>2.9312500953674316</real>
+			<real>0.0</real>
 			<key>position</key>
-			<real>5.9000000953674316</real>
+			<real>3.2333333492279053</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
-			<real>128</real>
+			<real>42.786518096923828</real>
 			<key>sequenceId</key>
 			<integer>0</integer>
 			<key>soundChannel</key>
