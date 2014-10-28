@@ -6,11 +6,8 @@
 //  Copyright (c) 2014 Software Rebel. All rights reserved.
 //
 
-#ifndef GameOfLife_Creature_h
-#define GameOfLife_Creature_h
-#endif
-
 #import "CCSprite.h"
+
 
 @interface Creature : CCSprite
 
@@ -24,4 +21,3 @@
 
 
 @end
-

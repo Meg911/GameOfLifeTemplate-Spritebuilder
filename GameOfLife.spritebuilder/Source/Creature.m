@@ -6,14 +6,13 @@
 //  Copyright (c) 2014 Software Rebel. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "Creature.h"
+
 
 
 BOOL _isAlive;
 
-@implementation Creature : CCSprite
-
+@implementation Creature
 
 - (instancetype)initCreature {
     // since we made Creature inherit from CCSprite, 'super' below refers to CCSprite
@@ -34,3 +33,4 @@ BOOL _isAlive;
     self.visible = _isAlive;
 }
 @end
+

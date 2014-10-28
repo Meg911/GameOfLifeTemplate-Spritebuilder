@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 Software Rebel. All rights reserved.
 //
 
+
 #import <Foundation/Foundation.h>
 #import "Grid.h"
 #import "Creature.h"
-//#import <cocos2d-ui.h>
-//#import <cocos2d.h>
+
 
 // these are variables that cannot be changed
 static const int GRID_ROWS = 8;
@@ -20,7 +20,7 @@ static int column;
 
 
 @implementation Grid {
-  
+    
     NSMutableArray *_gridArray;
     float _cellWidth;
     float _cellHeight;
@@ -83,14 +83,14 @@ static int column;
 }
 
 - (Creature *)creatureForTouchPosition:(CGPoint)touchPosition {
-   /* Divide the y coordinate of the touch (accessed as touchPosition.y) by the cellHeight to get the row that was touched. Store that value in an integer called row. Divide the x coordinate of the touch (accessed as touchPosition.x) by the cellWidth to get the column that was touched. Store that value in an integer called column.*/
+    /* Divide the y coordinate of the touch (accessed as touchPosition.y) by the cellHeight to get the row that was touched. Store that value in an integer called row. Divide the x coordinate of the touch (accessed as touchPosition.x) by the cellWidth to get the column that was touched. Store that value in an integer called column.*/
     
     _cellWidth = self.contentSize.width / column;
     _cellHeight = self.contentSize.height / row;
     
     //float x = 0;
-  // float y = 0;
-
+    // float y = 0;
+    
     //get the row and column that was touched, return the Creature inside the corresponding cell
     return _gridArray[row][column];
 }
@@ -105,7 +105,7 @@ static int column;
     _generation++;
 }
 -(void)countNeighbors{
-
+    
     // iterate through the rows
     // note that NSArray has a method 'count' that will return the number of elements in the array
     for (int i = 0; i < [_gridArray count]; i++)
@@ -170,10 +170,10 @@ static int column;
                     // skip over all cells that are off screen AND the cell that contains the creature we are currently updating
                     if (!((x == i) && (y == j)) && isIndexValid) {
                         Creature *neighbor = _gridArray[x][y];
-                   //next if/else if statement. In the if statement, check if the Creature's livingNeighbors property is set to 3. If it is, that means it has 3 live neighbors so you want to set its isAlive property to TRUE. In the else if you want to check if the Creature has less than or equal to 1 living neighbors or more than or equal to 4. If either are true, set the Creature's isAlive property to FALSE.
+                        //next if/else if statement. In the if statement, check if the Creature's livingNeighbors property is set to 3. If it is, that means it has 3 live neighbors so you want to set its isAlive property to TRUE. In the else if you want to check if the Creature has less than or equal to 1 living neighbors or more than or equal to 4. If either are true, set the Creature's isAlive property to FALSE.
                         
                         if (neighbor.isAlive == 3) {
-                           //currentCreature.livingNeighbors += 1;
+                            //currentCreature.livingNeighbors += 1;
                             currentCreature.livingNeighbors = TRUE;
                         } else {
                             currentCreature.livingNeighbors = FALSE;
@@ -182,10 +182,10 @@ static int column;
                 }
             }
         }
-   }
-   // _totalAlive = numAlive;
+    }
+    // _totalAlive = numAlive;
 }
-  
+
 - (BOOL)isIndexValidForX:(int)x andY:(int)y
 {
     BOOL isIndexValid = YES;
@@ -197,3 +197,4 @@ static int column;
 }
 
 @end
+

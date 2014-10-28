@@ -6,12 +6,9 @@
 //  Copyright (c) 2014 Software Rebel. All rights reserved.
 //
 
-#ifndef GameOfLife_Grid_h
-#define GameOfLife_Grid_h
-
-
-#endif
 #import "CCSprite.h"
+
+
 
 
 @interface Grid : CCSprite
@@ -22,4 +19,6 @@
 -(void)evolveStep;
 -(void)countNeighbors;
 -(void)updateCreatures;
+@end
+
 @end
