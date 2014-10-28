@@ -99,7 +99,7 @@ static int column;
     [self countNeighbors];
     
     //update each Creature's state
-    [self updateCreatures];
+   //DEBUG [self updateCreatures];
     
     //update the generation so the label's text will display the correct generation
     
