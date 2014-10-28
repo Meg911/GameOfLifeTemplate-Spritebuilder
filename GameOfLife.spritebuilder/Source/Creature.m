@@ -17,7 +17,7 @@ BOOL _isAlive;
 - (instancetype)initCreature {
     // since we made Creature inherit from CCSprite, 'super' below refers to CCSprite
     //self = [super initWithImageNamed:@"bubble.png"];
-    //DEBUG self = [super initWithImageNamed:@"GameOfLifeAssets/Assets/resources-phone/bubble.png"];
+    self = [super initWithImageNamed:@"GameOfLifeAssets/Assets/resources-phone/bubble.png"];
     
     if (self) {
         self.isAlive = NO;

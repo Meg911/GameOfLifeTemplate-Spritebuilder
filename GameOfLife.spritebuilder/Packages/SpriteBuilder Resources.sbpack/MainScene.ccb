@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>21</integer>
+	<integer>22</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -50,7 +50,7 @@
 				<array>
 					<dict>
 						<key>UUID</key>
-						<integer>11</integer>
+						<integer>21</integer>
 						<key>baseClass</key>
 						<string>CCBFile</string>
 						<key>children</key>
@@ -212,10 +212,6 @@
 												</array>
 											</dict>
 										</array>
-										<key>selected</key>
-										<true/>
-										<key>seqExpanded</key>
-										<true/>
 									</dict>
 									<dict>
 										<key>UUID</key>
@@ -1514,8 +1510,6 @@ _generationLabel</string>
 												</array>
 											</dict>
 										</array>
-										<key>seqExpanded</key>
-										<true/>
 									</dict>
 									<dict>
 										<key>UUID</key>
@@ -1842,7 +1836,7 @@ _generationLabel</string>
 												</array>
 											</dict>
 										</array>
-										<key>seqExpanded</key>
+										<key>selected</key>
 										<true/>
 									</dict>
 								</array>

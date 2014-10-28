@@ -141,6 +141,7 @@ static int column;
     }
 }
 -(void)updateCreatures{
+    int numAlive = 0;
     // iterate through the rows
     // note that NSArray has a method 'count' that will return the number of elements in the array
     for (int i = 0; i < [_gridArray count]; i++) {
@@ -182,7 +183,7 @@ static int column;
             }
         }
     }
-    // _totalAlive = numAlive;
+     _totalAlive = numAlive;
 }
 
 - (BOOL)isIndexValidForX:(int)x andY:(int)y
