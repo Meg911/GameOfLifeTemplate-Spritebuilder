@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "Grid.h"
 #import "Creature.h"
+#import <cocos2d-ui.h>
+#import <cocos2d.h>
 
 // these are variables that cannot be changed
 static const int GRID_ROWS = 8;
