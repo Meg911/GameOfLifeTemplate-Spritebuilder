@@ -164,16 +164,16 @@ static int column;
                     BOOL isIndexValid;
                     isIndexValid = [self isIndexValidForX:x andY:y];
                     
-                    // skip over all cells that are off screen AND the cell that contains the creature we are currently updating
+                /*    // skip over all cells that are off screen AND the cell that contains the creature we are currently updating
                     if (!((x == i) && (y == j)) && isIndexValid){
                         Creature *neighbor = _gridArray[x][y];
                         if (neighbor.isAlive >= 3) {
                             currentCreature.livingNeighbors = TRUE;
-                        }else {
+                        }else if (neighbor.isAlive <= 1) {
                                 currentCreature.livingNeighbors = FALSE;
                             }
                         }
-                        //next if/else if statement. In the if statement, check if the Creature's livingNeighbors property is set to 3. If it is, that means it has 3 live neighbors so you want to set its isAlive property to TRUE. In the else if you want to check if the Creature has less than or equal to 1 living neighbors or more than or equal to 4. If either are true, set the Creature's isAlive property to FALSE.
+                                           //next if/else if statement. In the if statement, check if the Creature's livingNeighbors property is set to 3. If it is, that means it has 3 live neighbors so you want to set its isAlive property to TRUE. In the else if you want to check if the Creature has less than or equal to 1 living neighbors or more than or equal to 4. If either are true, set the Creature's isAlive property to FALSE.
                         
                         
                        /* if (currentCreature.livingNeighbors >= 3) {
@@ -182,12 +182,20 @@ static int column;
                         } else {
                             currentCreature.livingNeighbors = FALSE;
                         }*/
+                    // skip over all cells that are off screen AND the cell that contains the creature we are currently updating
+                    if (!((x == i) && (y == j)) && isIndexValid){
+                        Creature *neighbor = _gridArray[x][y];
+                        if (neighbor.isAlive >= 3) {
+                            currentCreature.livingNeighbors = TRUE;
+                        }else if (neighbor.isAlive <=1){
+                                currentCreature.livingNeighbors = FALSE;
+                        }
                     }
                 }
             }
         }
-   // }
-   
+    }
+
      _totalAlive = numAlive;
 }
 
