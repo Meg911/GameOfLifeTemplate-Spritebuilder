@@ -1,18 +1,19 @@
 //
-//  CCSprite+Creature.m
+//  Creature.m
 //  GameOfLife
 //
 //  Created by Magreth de Graaf on 28/10/2014.
-//  Copyright (c) 2014 Apportable. All rights reserved.
+//  Copyright (c) 2014 Software Rebel. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import "Creature.h"
 
-@implementation CCSprite (Creature)
+//@implementation CCSprite (Creature)
 
 BOOL _isAlive;
 
-//@implementation Creature
+@implementation Creature : CCSprite
 
 
 - (instancetype)initCreature {

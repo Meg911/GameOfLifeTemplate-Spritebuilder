@@ -1,18 +1,18 @@
 //
-//  CCSprite+Grid.m
+//  Grid.m
 //  GameOfLife
 //
 //  Created by Magreth de Graaf on 28/10/2014.
-//  Copyright (c) 2014 Apportable. All rights reserved.
+//  Copyright (c) 2014 Software Rebel. All rights reserved.
 //
 
-#import "CCSprite+Grid.h"
+#import <Foundation/Foundation.h>
+#import "Grid.h"
 
-@implementation CCSprite (Grid)
 // these are variables that cannot be changed
 static const int GRID_ROWS = 8;
 static const int GRID_COLUMNS = 10;
-@end
+
 
 @implementation Grid {
     NSMutableArray *_gridArray;

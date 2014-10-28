@@ -9,7 +9,7 @@
 #import "CCSprite.h"
 
 //@interface CCSprite (Grid)
-@interface Grid
+@interface Grid : CCSprite
 
 @property (nonatomic, assign) int totalAlive;
 @property (nonatomic, assign) int generation;
