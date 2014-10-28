@@ -2,21 +2,24 @@
 //  CCSprite+Creature.m
 //  GameOfLife
 //
-//  Created by Magreth de Graaf on 27/10/2014.
+//  Created by Magreth de Graaf on 28/10/2014.
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import "Creature.h"
+#import "CCSprite+Creature.h"
 
 @implementation CCSprite (Creature)
 
 BOOL _isAlive;
-//NSInteger _livingNeighbors;
+
+
+//@implementation Creature
+
 
 - (instancetype)initCreature {
     // since we made Creature inherit from CCSprite, 'super' below refers to CCSprite
     //self = [super initWithImageNamed:@"bubble.png"];
-   //DEBUG self = [super initWithImageNamed:@"GameOfLifeAssets/Assets/resources-phone/bubble.png"];
+    //DEBUG self = [super initWithImageNamed:@"GameOfLifeAssets/Assets/resources-phone/bubble.png"];
     
     if (self) {
         self.isAlive = NO;
