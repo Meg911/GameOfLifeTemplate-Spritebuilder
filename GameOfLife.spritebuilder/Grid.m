@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Grid.h"
+#import "Creature.h"
 
 // these are variables that cannot be changed
 static const int GRID_ROWS = 8;
@@ -15,13 +16,13 @@ static const int GRID_COLUMNS = 10;
 
 
 @implementation Grid {
+  
     NSMutableArray *_gridArray;
     float _cellWidth;
     float _cellHeight;
 }
 
-- (void)onEnter
-{
+- (void)onEnter {
     [super onEnter];
     
     [self setupGrid];
@@ -29,8 +30,7 @@ static const int GRID_COLUMNS = 10;
     // accept touches on the grid
     self.userInteractionEnabled = YES;
 }
-- (void)setupGrid
-{
+- (void)setupGrid {
     // divide the grid's size by the number of columns/rows to figure out the right width and height of each cell
     _cellWidth = self.contentSize.width / GRID_COLUMNS;
     _cellHeight = self.contentSize.height / GRID_ROWS;
@@ -55,7 +55,7 @@ static const int GRID_COLUMNS = 10;
             
             // this is shorthand to access an array inside an array
             _gridArray[i][j] = creature;
-            
+            // DEBUG
             // make creatures visible to test this method, remove this once we know we have filled the grid properly
             creature.isAlive = YES;
             
@@ -65,6 +65,16 @@ static const int GRID_COLUMNS = 10;
         y += _cellHeight;
     }
 }
-
+- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    //get the x,y coordinates of the touch
+    CGPoint touchLocation = [touch locationInNode:self];
+    
+    //get the Creature at that location
+    Creature *creature = [self creatureForTouchPosition:touchLocation];
+    
+    //invert it's state - kill it if it's alive, bring it to life if it's dead.
+    creature.isAlive = !creature.isAlive;
+}
 
 @end

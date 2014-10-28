@@ -8,9 +8,8 @@
 
 #ifndef GameOfLife_Creature_h
 #define GameOfLife_Creature_h
-
-
 #endif
+
 #import "CCSprite.h"
 
 @interface Creature : CCSprite
