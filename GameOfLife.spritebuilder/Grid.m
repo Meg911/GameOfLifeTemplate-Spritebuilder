@@ -183,6 +183,7 @@ static int column;
             }
         }
    }
+   // _totalAlive = numAlive;
 }
   
 - (BOOL)isIndexValidForX:(int)x andY:(int)y
