@@ -426,6 +426,8 @@
 														</array>
 													</dict>
 												</array>
+												<key>selected</key>
+												<true/>
 											</dict>
 											<dict>
 												<key>UUID</key>
@@ -861,7 +863,7 @@
 												<key>displayName</key>
 												<string>CCLabelTTF</string>
 												<key>memberVarAssignmentName</key>
-												<string>.
+												<string>_generationLabel
 
 We also want to create a connection for our grid. Select the grid on the stage and create a connection called _grid in the same way you created connections for the labels.
 
@@ -949,6 +951,14 @@ _generationLabel</string>
 															<false/>
 															<integer>0</integer>
 														</array>
+													</dict>
+													<dict>
+														<key>name</key>
+														<string>rotation</string>
+														<key>type</key>
+														<string>Degrees</string>
+														<key>value</key>
+														<real>-1.8525248765945435</real>
 													</dict>
 													<dict>
 														<key>name</key>
@@ -1502,8 +1512,6 @@ _generationLabel</string>
 												</array>
 											</dict>
 										</array>
-										<key>selected</key>
-										<true/>
 									</dict>
 									<dict>
 										<key>UUID</key>
