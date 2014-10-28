@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import "CCSprite+Grid.h"
+#import "Grid.h"
 
 @implementation CCSprite (Grid)
 // these are variables that cannot be changed
