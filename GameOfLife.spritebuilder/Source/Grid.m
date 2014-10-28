@@ -88,8 +88,8 @@ static int column;
     _cellWidth = self.contentSize.width / column;
     _cellHeight = self.contentSize.height / row;
     
-    // float x = 0;
-    // float y = 0;
+     float x = 0;
+     float y = 0;
     
     //get the row and column that was touched, return the Creature inside the corresponding cell
     return _gridArray[row][column];
@@ -99,7 +99,7 @@ static int column;
     [self countNeighbors];
     
     //update each Creature's state
-   //DEBUG [self updateCreatures];
+   [self updateCreatures];
     
     //update the generation so the label's text will display the correct generation
     
@@ -142,6 +142,7 @@ static int column;
 }
 -(void)updateCreatures{
     int numAlive = 0;
+    
     // iterate through the rows
     // note that NSArray has a method 'count' that will return the number of elements in the array
     for (int i = 0; i < [_gridArray count]; i++) {
@@ -183,6 +184,7 @@ static int column;
             }
         }
     }
+   
      _totalAlive = numAlive;
 }
 
