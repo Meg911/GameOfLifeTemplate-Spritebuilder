@@ -9,13 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "Grid.h"
 #import "Creature.h"
-#import <cocos2d-ui.h>
-#import <cocos2d.h>
+//#import <cocos2d-ui.h>
+//#import <cocos2d.h>
 
 // these are variables that cannot be changed
 static const int GRID_ROWS = 8;
 static const int GRID_COLUMNS = 10;
-
+static int row ;
+static int column;
 
 @implementation Grid {
   
@@ -67,10 +68,7 @@ static const int GRID_COLUMNS = 10;
         y += _cellHeight;
     }
 }
-- (Creature *)creatureForTouchPosition:(CGPoint)touchPosition
-{
-    //get the row and column that was touched, return the Creature inside the corresponding cell
-}
+
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
     //get the x,y coordinates of the touch
@@ -81,6 +79,19 @@ static const int GRID_COLUMNS = 10;
     
     //invert it's state - kill it if it's alive, bring it to life if it's dead.
     creature.isAlive = !creature.isAlive;
+}
+
+- (Creature *)creatureForTouchPosition:(CGPoint)touchPosition {
+   /* Divide the y coordinate of the touch (accessed as touchPosition.y) by the cellHeight to get the row that was touched. Store that value in an integer called row. Divide the x coordinate of the touch (accessed as touchPosition.x) by the cellWidth to get the column that was touched. Store that value in an integer called column.*/
+    
+    _cellWidth = self.contentSize.width / column;
+    _cellHeight = self.contentSize.height / row;
+    
+    float x = 0;
+    float y = 0;
+
+    //get the row and column that was touched, return the Creature inside the corresponding cell
+    return _gridArray[row][column];
 }
 
 @end
