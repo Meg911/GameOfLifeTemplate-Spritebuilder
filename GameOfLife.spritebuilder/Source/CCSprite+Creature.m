@@ -12,7 +12,6 @@
 
 BOOL _isAlive;
 
-
 //@implementation Creature
 
 
