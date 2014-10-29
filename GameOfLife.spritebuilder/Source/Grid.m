@@ -101,7 +101,7 @@ static const int GRID_COLUMNS = 10;
     return creature;
 
 }
-
+#pragma mark - Util function
 - (BOOL)isIndexValidForX:(int)x andY:(int)y
 {
     BOOL isIndexValid = YES;
@@ -111,7 +111,7 @@ static const int GRID_COLUMNS = 10;
     }
     return isIndexValid;
 }
-
+#pragma mark - Game Logic
 - (void)evolveStep {
     //update each Creature's neighbor count
     [self countNeighbors];
