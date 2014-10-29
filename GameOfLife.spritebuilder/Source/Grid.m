@@ -101,6 +101,17 @@ static const int GRID_COLUMNS = 10;
     return creature;
 
 }
+
+- (BOOL)isIndexValidForX:(int)x andY:(int)y
+{
+    BOOL isIndexValid = YES;
+    if(x < 0 || y < 0 || x >= GRID_ROWS || y >= GRID_COLUMNS)
+    {
+        isIndexValid = NO;
+    }
+    return isIndexValid;
+}
+
 - (void)evolveStep {
     //update each Creature's neighbor count
     [self countNeighbors];
@@ -172,15 +183,7 @@ static const int GRID_COLUMNS = 10;
     }
 }
 
-- (BOOL)isIndexValidForX:(int)x andY:(int)y
-{
-    BOOL isIndexValid = YES;
-    if(x < 0 || y < 0 || x >= GRID_ROWS || y >= GRID_COLUMNS)
-    {
-        isIndexValid = NO;
-    }
-    return isIndexValid;
-}
+
 
 @end
 
