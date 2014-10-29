@@ -81,7 +81,7 @@ static const int GRID_COLUMNS = 10;
 }
 
 - (Creature *)creatureForTouchPosition:(CGPoint)touchPosition {
-    /* Divide the y coordinate of the touch (accessed as touchPosition.y) by the cellHeight to get the row that was touched. Store that value in an integer called row. Divide the x coordinate of the touch (accessed as touchPosition.x) by the cellWidth to get the column that was touched. Store that value in an integer called column.*/
+    /* Divide the y coordinate of the touch (accessed as touchPosition.y) by the cellHeight to get the row that was touched. Store that value in an integer called row. Divide the x coordinate of the touch (accessed as touchPosition.x) by the cellWidth to get the column that was touched. Store that value in an integer called column.
     
     _cellWidth = self.contentSize.width / column;
     _cellHeight = self.contentSize.height / row;
@@ -90,7 +90,16 @@ static const int GRID_COLUMNS = 10;
      float y = 0;
     
     //get the row and column that was touched, return the Creature inside the corresponding cell
-    return _gridArray[row][column];
+    return _gridArray[row][column];*/
+    //get the row and column that was touched, return the Creature inside the corresponding cell
+    Creature *creature = nil;
+    
+    int column = touchPosition.x / _cellWidth;
+    int row = touchPosition.y / _cellHeight;
+    creature = _gridArray[row][column];
+    
+    return creature;
+
 }
 - (void)evolveStep {
     //update each Creature's neighbor count
