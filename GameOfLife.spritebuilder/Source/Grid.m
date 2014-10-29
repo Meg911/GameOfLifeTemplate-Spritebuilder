@@ -15,8 +15,6 @@
 // these are variables that cannot be changed
 static const int GRID_ROWS = 8;
 static const int GRID_COLUMNS = 10;
-static int row ;
-static int column;
 
 
 @implementation Grid {
@@ -61,7 +59,7 @@ static int column;
             _gridArray[i][j] = creature;
             // DEBUG
             // make creatures visible to test this method, remove this once we know we have filled the grid properly
-            creature.isAlive = YES;
+            //creature.isAlive = YES;
             
             x += _cellWidth;
         }
